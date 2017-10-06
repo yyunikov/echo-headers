@@ -19,7 +19,7 @@ public class HeadersController {
     final Map<String, String> headers = new HashMap<>();
     while (headerNames.hasMoreElements()) {
       final String headerName = headerNames.nextElement();
-      final String headerValue = response.getHeader(headerName);
+      final String headerValue = request.getHeader(headerName);
       headers.put(headerName, headerValue);
     }
 
